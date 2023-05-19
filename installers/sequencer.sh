@@ -7,4 +7,4 @@ rm -rf ./seq-2.2.9.tar.gz
 
 cd seq-2.2.9
 sed -i 's@EPICS_BASE=.*@EPICS_BASE=/usr/local/epics/base@' configure/RELEASE
-make -j
+make -j `nproc`

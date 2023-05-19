@@ -5,4 +5,4 @@ git clone --recursive --branch R7.0.5 https://github.com/epics-base/epics-base.g
 mv epics-base base
 cd base
 
-make -j
+make -j `nproc`

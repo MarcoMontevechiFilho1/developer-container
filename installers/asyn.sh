@@ -13,4 +13,4 @@ sed -i 's@EPICS_BASE=.*@EPICS_BASE=/usr/local/epics/base@' configure/RELEASE
 
 sed -i 's@.*TIRPC=.*@TIRPC=YES@' configure/CONFIG_SITE
 
-make -j
+make -j `nproc`
