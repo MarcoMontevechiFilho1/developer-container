@@ -54,5 +54,8 @@ RUN bash /tmp/streamdevice.sh
 COPY ./installers/micromamba.sh /tmp
 RUN bash /tmp/micromamba.sh
 
+#I dont want to throw my cached build out, so i put this here
+RUN apt-get -y install libgl1;
+
 #To be able to find conda command
 ENV PATH="${PATH}:/root/mambaforge/bin"
