@@ -7,4 +7,7 @@ services:
     container_name: dev-container
     volumes:
       - /home:/home/work
+      - /tmp/.X11-unix:/tmp/.X11-unix/
+    environment:
+      - DISPLAY
     command: tail -f /dev/null
