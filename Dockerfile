@@ -51,5 +51,8 @@ RUN bash /tmp/areadetector.sh
 COPY ./installers/streamdevice.sh /tmp
 RUN bash /tmp/streamdevice.sh
 
+COPY ./installers/micromamba.sh /tmp
+RUN bash /tmp/micromamba.sh
+
 #To be able to find conda command
 ENV PATH="${PATH}:/root/mambaforge/bin"
