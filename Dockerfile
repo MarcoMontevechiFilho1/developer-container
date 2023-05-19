@@ -48,8 +48,8 @@ RUN bash /tmp/deviocstats.sh
 COPY ./installers/areadetector.sh /tmp
 RUN bash /tmp/areadetector.sh
 
-#COPY ./installers/streamdevice.sh /tmp
-#RUN bash /tmp/streamdevice.sh
+COPY ./installers/streamdevice.sh /tmp
+RUN bash /tmp/streamdevice.sh
 
 #To be able to find conda command
-#ENV PATH="${PATH}:/root/mambaforge/bin"
+ENV PATH="${PATH}:/root/mambaforge/bin"
