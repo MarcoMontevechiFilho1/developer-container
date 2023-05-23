@@ -58,4 +58,4 @@ RUN bash /tmp/micromamba.sh
 RUN apt-get -y install libgl1;
 
 #To be able to find conda command
-ENV PATH="${PATH}:/root/mambaforge/bin"
+ENV PATH="${PATH}:/root/mambaforge/bin:/usr/local/epics/base/bin/linux-x86_64"
