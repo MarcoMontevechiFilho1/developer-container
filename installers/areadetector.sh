@@ -38,7 +38,7 @@ sed -i 's@EPICS_BASE=.*@EPICS_BASE=/usr/local/epics/base@' RELEASE_PRODS.local
 
 sed -i 's@WITH_GRAPHICSMAGICK.*@WITH_GRAPHICKSMAGICK = NO@' CONFIG_SITE.local
 
-sed -i 's@./*ADSIMDETECTOR.*@ADSIMDETECTOR=$(AREA_DETECTOR)/ADSimDetector@' configure/RELEASE.local
+sed -i 's@./*ADSIMDETECTOR.*@ADSIMDETECTOR=$(AREA_DETECTOR)/ADSimDetector@' RELEASE.local
 
 cd /usr/local/epics/modules/areaDetector/ADCore/iocBoot
 mv EXAMPLE_commonPlugin_settings.req commonPlugins.cmd
